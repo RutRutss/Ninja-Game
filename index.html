@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="gamespace">
+
+
+        <div id="avatar" class="avatar idle"></div>
+    </div>
+
+    <script>
+        let avatar = document.querySelector('.avatar');
+        let move = 0;
+        let step = 13;
+
+        document.addEventListener('keyup', function (event) {
+            avatar.classList.add('idle')
+            avatar.classList.remove('walk')
+            avatar.classList.remove('attack')
+        });
+
+        document.addEventListener('keydown', function (event) {
+            console.log('ปุ่มที่ถูกกด:', event.key);
+
+            function walk() {
+
+            }
+
+            // เดินขวา
+            if (event.key == 'ArrowRight') {
+                avatar.classList.remove('flip')
+                avatar.classList.remove('idle')
+                avatar.classList.add('walk')
+
+                move += step
+                avatar.style.left = move + 'px'
+
+            }
+            // เดินซ้าย
+            if (event.key == 'ArrowLeft') {
+                avatar.classList.add('flip')
+                avatar.classList.remove('idle')
+                avatar.classList.add('walk')
+                move -= step
+                avatar.style.left = move + 'px'
+
+            }
+
+            // attack
+            if (event.key == 'z') {
+                avatar.classList.remove('idle')
+                avatar.classList.add('attack')
+            }
+
+
+        });
+
+    </script>
+</body>
+
+</html>

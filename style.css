@@ -1,0 +1,192 @@
+body {
+    background-image: url('media/scene-1/background-scene-1.png');
+}
+
+.avatar {
+    background-image: url('media/ninja/Idle__000.png');
+    position: relative;
+
+    z-index: 3;
+    scale: .5;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.idle {
+    width: 232px;
+    height: 439px;
+    animation: ninjaIdle .5s infinite;
+}
+
+@keyframes ninjaIdle {
+
+    0%,
+    10% {
+        background-image: url('media/ninja/Idle__000.png');
+    }
+
+    11%,
+    20% {
+        background-image: url('media/ninja/Idle__001.png');
+    }
+
+    21%,
+    30% {
+        background-image: url('media/ninja/Idle__002.png');
+    }
+
+    31%,
+    40% {
+        background-image: url('media/ninja/Idle__003.png');
+    }
+
+    41%,
+    50% {
+        background-image: url('media/ninja/Idle__004.png');
+    }
+
+    51%,
+    60% {
+        background-image: url('media/ninja/Idle__005.png');
+    }
+
+    61%,
+    70% {
+        background-image: url('media/ninja/Idle__006.png');
+    }
+
+    71%,
+    80% {
+        background-image: url('media/ninja/Idle__007.png');
+    }
+
+    81%,
+    90% {
+        background-image: url('media/ninja/Idle__008.png');
+    }
+
+    91%,
+    100% {
+        background-image: url('media/ninja/Idle__009.png');
+    }
+}
+
+.walk {
+    width: 363px;
+    height: 458px;
+    animation: ninjaWalk .2s infinite;
+}
+
+@keyframes ninjaWalk {
+
+    0%,
+    10% {
+        background-image: url('media/ninja/Run__000.png');
+    }
+
+    11%,
+    20% {
+        background-image: url('media/ninja/Run__001.png');
+    }
+
+    21%,
+    30% {
+        background-image: url('media/ninja/Run__002.png');
+    }
+
+    31%,
+    40% {
+        background-image: url('media/ninja/Run__003.png');
+    }
+
+    41%,
+    50% {
+        background-image: url('media/ninja/Run__004.png');
+    }
+
+    51%,
+    60% {
+        background-image: url('media/ninja/Run__005.png');
+    }
+
+    61%,
+    70% {
+        background-image: url('media/ninja/Run__006.png');
+    }
+
+    71%,
+    80% {
+        background-image: url('media/ninja/Run__007.png');
+    }
+
+    81%,
+    90% {
+        background-image: url('media/ninja/Run__008.png');
+    }
+
+    91%,
+    100% {
+        background-image: url('media/ninja/Run__009.png');
+    }
+}
+
+.attack{
+    width: 536px;
+    height: 495px;
+    animation: ninjaAttack .2s infinite;
+    transform: translate(-180px,-30px);
+}
+
+@keyframes ninjaAttack {
+    0%,
+    10% {
+        background-image: url('media/ninja/Attack__000.png');
+    }
+
+    11%,
+    20% {
+        background-image: url('media/ninja/Attack__001.png');
+    }
+
+    21%,
+    30% {
+        background-image: url('media/ninja/Attack__002.png');
+    }
+
+    31%,
+    40% {
+        background-image: url('media/ninja/Attack__003.png');
+    }
+
+    41%,
+    50% {
+        background-image: url('media/ninja/Attack__004.png');
+    }
+
+    51%,
+    60% {
+        background-image: url('media/ninja/Attack__005.png');
+    }
+
+    61%,
+    70% {
+        background-image: url('media/ninja/Attack__006.png');
+    }
+
+    71%,
+    80% {
+        background-image: url('media/ninja/Attack__007.png');
+    }
+
+    81%,
+    90% {
+        background-image: url('media/ninja/Attack__008.png');
+    }
+
+    91%,
+    100% {
+        background-image: url('media/ninja/Attack__009.png');
+    }
+}
